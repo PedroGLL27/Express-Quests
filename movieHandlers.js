@@ -24,12 +24,15 @@ const getMovieById = (req, res) => {
     res.status(404).send("Not Found");
   }
 };
-
-
+const postMovie = (req, res) => {
+  res.send("Post route is working 🎉");
+};
 
 module.exports = {
   getMovies,
   getMovieById,
-  
-
+  postMovie, // don't forget to export your function ;)
 };
+
+
+
